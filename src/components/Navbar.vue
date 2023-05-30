@@ -17,10 +17,10 @@ export default {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <RouterLink class="nav-link active" aria-current="page" to="/">Home</RouterLink>
+          <RouterLink class="nav-link {{ request()->is('/')? active}}" aria-current="page" to="/">Home</RouterLink>
         </li>
         <li class="nav-item">
-          <RouterLink class="nav-link" to="/add/book">Add Book</RouterLink>
+          <RouterLink class="nav-link {{ request()->is('/add/book')? active}}" to="/add/book">Add Book</RouterLink>
         </li>      
       </ul>
     </div>

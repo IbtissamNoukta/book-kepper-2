@@ -46,7 +46,7 @@ export default {
     <div class="row">
             <div class="col-md-6 mx-auto my-4">
                 <h3 class="border-bottom py-2">
-                    Ajouter un livre
+                  Add a book
                 </h3>
                 <form @submit="submitBook">
                     <div class="form-group p-3">
@@ -59,7 +59,7 @@ export default {
                         <input type="text" class="form-control" 
                         v-model="state.book.title"
                         :class="state.book.title.length ? state.validClass : state.errorClass"
-                        placeholder="titre">
+                        placeholder="title">
                     </div>
                     <div class="form-group p-3">
                         <textarea cols="30" rows="5" class="form-control"
@@ -70,7 +70,7 @@ export default {
                     <div class="form-group p-3">
                         <button :disabled="!state.book.ref || !state.book.title || !state.book.description " 
                           type ="submit" class="btn btn-primary">
-                            Valider
+                            Validate
                         </button>
                     </div>
                 </form>

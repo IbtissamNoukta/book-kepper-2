@@ -8,8 +8,8 @@ import { useCounterStore } from '@/stores/counter'
 export default {
     setup(){
       //pinia
-      const counter = useCounterStore();
-      counter.increment();
+      // const counter = useCounterStore();
+      // counter.increment();
       
       const state = reactive({
         books: [],
@@ -32,7 +32,7 @@ export default {
       return{
         state,
         removeBook,
-        counter
+        //counter
       }
     }
 }
@@ -41,9 +41,9 @@ export default {
 <template>
   <div class="container">
     
-    <button @click="counter.increment">increment</button>
+    <!-- <button @click="counter.increment">increment</button>
     
-    {{ counter.count }}
+    {{ counter.count }} -->
     <table class="table">
   <thead>
     <tr>
